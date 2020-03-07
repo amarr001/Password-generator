@@ -1,6 +1,6 @@
 # Password-generator
 
-The password-generator project consisted of creating a application using HTML, CSS and Javascript to generate a random and secure password.
+The password-generator project consisted of creating an application using HTML, CSS and Javascript to generate a random and secure password.
 
 The user interface is responsive and adapts to different screen sizes. This is achieved by the use of media queries and adjusting margin, padding and using box-sizing property in the CSS file. 
 The interactive part of the project was done by creating a javascript file and linking it to index.html. Referencing files in the html file is good practice because it makes each file's code cleaner and easier to read and follow. 
