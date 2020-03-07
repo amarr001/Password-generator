@@ -12,6 +12,8 @@ var Numbers_char_codes = arrayFromLowToHigh(48,57);
 var Symbols_char_codes = arrayFromLowToHigh(33,47).concat(arrayFromLowToHigh(58,64)).concat(
 arrayFromLowToHigh(91,96));
 
+//On click function
+
 document.getElementById("generate").onclick = function(){
 
   Explanation = continueOrnot();
@@ -36,17 +38,21 @@ document.getElementById("generate").onclick = function(){
     }
     else{
     
-      event.preventDefault();
+      event.preventDefault(); //prevent page from continue loading after pressing cancel
      
     }
     
   }
 
+  //Generating the password
+
   function generatePassword (characterAmountEl, includeUppercaseEl, includeNumbersEl, includeSymbolsEl) {
 
     //Default to lowercase character codes
     let charCodes = Lowercase_char_codes
-   
+
+   //Using concat method to call elements within the array inside the function arrayFromLowToHigh
+
     if (includeUppercaseEl) charCodes = charCodes.concat(Uppercase_char_codes)
     if (includeNumbersEl) charCodes = charCodes.concat(Numbers_char_codes);
     if (includeSymbolsEl) charCodes = charCodes.concat(Symbols_char_codes);
